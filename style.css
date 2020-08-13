@@ -47,7 +47,7 @@ h3 {
     margin-left: 10px;
 }
 
-.yellow {
+.yellow, .about h1 {
     color: rgba(242, 171, 38, 1);
 }
 .hallo {
@@ -60,15 +60,9 @@ h3 {
    /* margin-top: 10px; */
     padding: 0px 50px 25px 50px; 
     display: inline-flex; 
-    color: white;
-    
-    
-    
+    color: white;   
 }
 
-.about h1 {
-    color: rgba(242, 171, 38, 1);
-}
 
 .row {
     flex-wrap: wrap;
