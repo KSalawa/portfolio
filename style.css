@@ -1,16 +1,123 @@
 
-
-/* Color Theme Swatches in RGBA 
+/*
+ Color Theme Swatches in RGBA 
 .Flavour-1-rgba { color: rgba(49, 62, 63, 1); }
 .Flavour-2-rgba { color: rgba(242, 171, 38, 1); }
 .Flavour-3-rgba { color: rgba(216, 125, 13, 1); }
 .Flavour-4-rgba { color: rgba(114, 32, 2, 1); }
 .Flavour-5-rgba { color: rgba(216, 76, 26, 1); } */
 
+/*nav*/
+nav{
+  height: 10vh;
+  /*background: rgba(242, 171, 38, 1);*/
+  width: 100vh;
+}
 
+.nav-links{
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  /*background-color: coral;*/
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
 
+}
 
+.nav-links li a{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  color: white;
+  
 
+}
+
+.landing {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.gucci{
+  height: 300px;
+  margin-left: auto;
+}
+
+.landing h1{
+  margin: auto;
+  font-size: 50px;
+  color: white;
+}
+
+@media screen and (max-width: 600px){
+  
+  .line{
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  
+  nav{
+    position: relative;
+  }
+
+  .hamburger{
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 6.25%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links{
+    position: fixed;
+    background: rgba(242, 171, 38, 1);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(150px at 90% -20%);
+    -webkit-clip-path: circle(150px at 90% -20%);
+    transition: all 1s ease-out;
+    height: 100vh;
+    pointer-events: none;
+  }
+  .nav-links.open{
+    clip-path: circle(1100px at 90% -20%);
+    -webkit-clip-path: circle(1100px at 90% -20%);
+    pointer-events: all;
+  }
+  .landing{
+    flex-direction: column;
+  }
+  .nav-links li{
+    opacity: 1;
+  }
+  .nav-links li a{
+    font-size: 25px;
+  }
+  .nav-links li:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2){
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3){
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 0;
+  }
+}
+
+/*about*/
 .rounded {
     border-radius: 100%;
     height: 150px;
